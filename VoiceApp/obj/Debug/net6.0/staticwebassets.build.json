@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "O6Fk2Jj6Fvn6lmUd8v9k/OQk82zulL8pw3ToAeNFUgk=",
+  "Source": "SendSmsAndReceive",
+  "BasePath": "_content/SendSmsAndReceive",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
