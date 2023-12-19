@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\my projects\\TwilioProject\\VoiceApp\\VoiceApp.csproj": {}
+    "C:\\Nilesh_GitHub\\VoiceApp\\VoiceApp\\VoiceApp.csproj": {}
   },
   "projects": {
-    "D:\\my projects\\TwilioProject\\VoiceApp\\VoiceApp.csproj": {
+    "C:\\Nilesh_GitHub\\VoiceApp\\VoiceApp\\VoiceApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\my projects\\TwilioProject\\VoiceApp\\VoiceApp.csproj",
+        "projectUniqueName": "C:\\Nilesh_GitHub\\VoiceApp\\VoiceApp\\VoiceApp.csproj",
         "projectName": "VoiceApp",
-        "projectPath": "D:\\my projects\\TwilioProject\\VoiceApp\\VoiceApp.csproj",
-        "packagesPath": "C:\\Users\\lnv-135\\.nuget\\packages\\",
-        "outputPath": "D:\\my projects\\TwilioProject\\VoiceApp\\obj\\",
+        "projectPath": "C:\\Nilesh_GitHub\\VoiceApp\\VoiceApp\\VoiceApp.csproj",
+        "packagesPath": "C:\\Users\\LNV-218\\.nuget\\packages\\",
+        "outputPath": "C:\\Nilesh_GitHub\\VoiceApp\\VoiceApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\lnv-135\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LNV-218\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://nuget.telerik.com/nuget": {},
+          "https://nuget.telerik.com/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -72,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

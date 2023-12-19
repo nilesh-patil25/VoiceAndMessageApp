@@ -16,15 +16,25 @@ namespace SendSmsAndReceive.Controllers
         [HttpPost("SendText")]
         public ActionResult SendText(string phoneNumber)
         {
-            TwilioClient.Init(accountSid, authToken);
+            try
+            {
+                TwilioClient.Init(accountSid, authToken);
 
-            //message
-            var message=MessageResource.Create(      //MessageResource.create method of twilio to send the message 
-                body:"Hi this is message from Twilio",  //body from twilio msg receive to the customer
-                from:new Twilio.Types.PhoneNumber("+15075125944"),  //from twilio
-                to:new Twilio.Types.PhoneNumber("+91"+phoneNumber)  //to customer
+                //message
+                var message = MessageResource.Create(
+                    body: "Hi this is a message from Twilio",
+                    from: new Twilio.Types.PhoneNumber("+15075125944"),
+                    to: new Twilio.Types.PhoneNumber("+91" + phoneNumber)
                 );
-            return StatusCode(200, new {message=message.Sid});
+
+                return StatusCode(200, new { message = message.Sid });
+            }
+            catch (Exception ex)
+            {
+                // Handle the exception or log it
+                return StatusCode(500, new { error = "An error occurred while sending the message." });
+            }
         }
+
     }
 }
