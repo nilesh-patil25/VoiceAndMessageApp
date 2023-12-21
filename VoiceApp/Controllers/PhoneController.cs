@@ -48,10 +48,20 @@ namespace SendSmsAndReceive.Controllers
         [HttpPost]
         public TwiMLResult ReceiveCall()
         {
-            var response = new VoiceResponse();
-            response.Say("Hi we are from Twilio");//sending the response
-            return TwiML(response);
+            try
+            {
+                var response = new VoiceResponse();
+                response.Say("Hi, we are from Twilio"); // Sending the response
+                return TwiML(response);
+            }
+            catch (Exception ex)
+            {
+                var errorResponse = new VoiceResponse();
+                errorResponse.Say("An error occurred while processing the call. Please try again later.");
+                return TwiML(errorResponse);
+            }
         }
+
 
     }
 }
